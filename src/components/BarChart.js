@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import Bar from './Bar';
 
-function BarChart({title, dataSourceUrl}) {
+function BarChart({title, barHeight, barPadding, barColor, dataSourceUrl}) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const useStyles = createUseStyles({
@@ -19,7 +19,6 @@ function BarChart({title, dataSourceUrl}) {
       return fetch(url)
         .then((res) => res.json())
         .then((data) => {
-          console.log('data', data);
           setData(data);
           setLoading(false);
         })
@@ -42,7 +41,9 @@ function BarChart({title, dataSourceUrl}) {
                     key={index}
                     data={record}
                     index={index}
-                    barHeight={30}
+                    barHeight={barHeight}
+                    barPadding={barPadding}
+                    barColor={barColor}
                    />
                 ))}
               </g>

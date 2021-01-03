@@ -1,8 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 
-function Bar({data, index, barHeight}) {
-  const barPadding = 2;
+function Bar({data, index, barHeight, barPadding, barColor}) {
   const barWidth = parseInt(data.value) * 30;
   const textYValue = barHeight * 0.5;
   const useStyles = createUseStyles({
@@ -15,9 +14,6 @@ function Bar({data, index, barHeight}) {
       fontSize: '1em',
       fill: '#333',
       textTransform: 'capitalize'
-    },
-    bar: {
-      fill: 'orange'
     },
     valueLabel: {
       textAnchor: 'end',
@@ -33,7 +29,7 @@ function Bar({data, index, barHeight}) {
     <g transform={`translate(0, ${index * barHeight})`}>
       <g className={classes.barGroup}>
         <text className={classes.nameLabel} x="-6" y={textYValue} alignmentBaseline="middle">{data.label}</text>
-        <rect className={classes.bar} y={barPadding * 0.5} width={barWidth} height={barHeight - barPadding}>
+        <rect y={barPadding * 0.5} width={barWidth} height={barHeight - barPadding} fill={barColor}>
         </rect>
         <text className={classes.valueLabel} x={barWidth - 8} y={textYValue} alignmentBaseline="middle">{data.value}</text>
       </g>
