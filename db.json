@@ -1,44 +1,44 @@
 {
-  "words": [
+  "data": [
     {
-      "word": "restaurant",
-      "chars": "10"
+      "label": "restaurant",
+      "value": "10"
     },
     {
-      "word": "reinforce",
-      "chars": "9"
+      "label": "reinforce",
+      "value": "9"
     },
     {
-      "word": "export",
-      "chars": "6"
+      "label": "export",
+      "value": "6"
     },
     {
-      "word": "neglect",
-      "chars": "7"
+      "label": "neglect",
+      "value": "7"
     },
     {
-      "word": "graduate",
-      "chars": "8"
+      "label": "graduate",
+      "value": "8"
     },
     {
-      "word": "departure",
-      "chars": "9"
+      "label": "departure",
+      "value": "9"
     },
     {
-      "word": "plant",
-      "chars": "5"
+      "label": "plant",
+      "value": "5"
     },
     {
-      "word": "mud",
-      "chars": "3"
+      "label": "mud",
+      "value": "3"
     },
     {
-      "word": "orthodox",
-      "chars": "8"
+      "label": "orthodox",
+      "value": "8"
     },
     {
-      "word": "broccoli",
-      "chars": "8"
+      "label": "broccoli",
+      "value": "8"
     }
   ]
 }
