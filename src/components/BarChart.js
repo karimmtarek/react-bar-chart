@@ -9,6 +9,9 @@ function BarChart({title, barHeight, barPadding, barColor, dataSourceUrl, valueM
     title: {
       fontSize: '1.4em',
       fontWeight: 300
+    },
+    error: {
+      color: 'red'
     }
   });
 
@@ -26,6 +29,10 @@ function BarChart({title, barHeight, barPadding, barColor, dataSourceUrl, valueM
 
     fetchData(dataSourceUrl);
   }, []);
+
+  if (!dataSourceUrl) {
+    return <h2 className={classes.error}>Chart data source is missing!</h2>;
+  }
 
   return (
     <div className="BarChart">

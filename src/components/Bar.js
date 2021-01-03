@@ -2,8 +2,13 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 
 function Bar({data, index, barHeight, barPadding, barColor, valueModifier}) {
-  const barWidth = parseInt(data.value) * valueModifier;
-  const textYValue = barHeight * 0.5;
+  const barHeightVar = barHeight || 20;
+  const barPaddingVar = barPadding || 4;
+  const barColorVar = barColor || 'orange';
+  const valueModifierVar = valueModifier || 10;
+
+  const barWidth = parseInt(data.value) * valueModifierVar;
+  const textYValue = barHeightVar * 0.5;
   const useStyles = createUseStyles({
     barGroup: {
       transition: 'opacity 300ms'
@@ -26,10 +31,10 @@ function Bar({data, index, barHeight, barPadding, barColor, valueModifier}) {
   const classes = useStyles();
 
   return (
-    <g transform={`translate(0, ${index * barHeight})`}>
+    <g transform={`translate(0, ${index * barHeightVar})`}>
       <g className={classes.barGroup}>
         <text className={classes.nameLabel} x="-6" y={textYValue} alignmentBaseline="middle">{data.label}</text>
-        <rect y={barPadding * 0.5} width={barWidth} height={barHeight - barPadding} fill={barColor}>
+        <rect y={barPaddingVar * 0.5} width={barWidth} height={barHeightVar - barPaddingVar} fill={barColorVar}>
         </rect>
         <text className={classes.valueLabel} x={barWidth - 10} y={textYValue} alignmentBaseline="middle">{data.value}</text>
       </g>

@@ -20,6 +20,13 @@ function App() {
          dataSourceUrl='https://my-json-server.typicode.com/karimmtarek/react-bar-chart/countries_by_population_data'
          valueModifier={(1/10000000*6)}
        />
+       <hr />
+       <BarChart />
+       <hr />
+       <BarChart
+          title='Chart With Fallback Props!'
+          dataSourceUrl='https://my-json-server.typicode.com/karimmtarek/react-bar-chart/data'
+        />
     </Fragment>
 }
 

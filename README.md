@@ -1,4 +1,48 @@
-# Getting Started with Create React App
+# React Bar Chart Component
+
+## Component `Props`
+
+- title `string` [optional]
+- barHeight `number` [optional]
+- barColor `string` [optional]
+- barPadding `number` [optional]
+- dataSourceUrl `string` [required] – data source is expected to be an array of objects, each opject has a `label` and a `value` keys! Check `db.json` for an example.
+- valueModifier `number` [optional]
+
+### Examples
+
+#### Component with all available props
+
+```jsx
+  <BarChart
+     title='Word Character Count Chart!'
+     barHeight={30}
+     barColor='teal'
+     barPadding={5}
+     dataSourceUrl='https://my-json-server.typicode.com/karimmtarek/react-bar-chart/data'
+     valueModifier={30}
+   />
+```
+![Examples image](https://api.monosnap.com/file/download?id=quXWu5KtooN3uh8kPvBmrT4bq66hsd)
+
+#### Component missing data source
+
+```jsx
+<BarChart />
+```
+![Examples image](https://api.monosnap.com/file/download?id=j75saFovH3hQ5lKcz8qXXT7Ijx8cKR)
+
+#### Component without optional props
+
+```jsx
+<BarChart
+    title='Chart With Fallback Props!'
+    dataSourceUrl='https://my-json-server.typicode.com/karimmtarek/react-bar-chart/data'
+  />
+```
+![Examples image](https://api.monosnap.com/file/download?id=e99DtjWQx1xTnGxmC9dlxmzzpkFq9t)
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
