@@ -44,83 +44,43 @@
   "countries_by_population_data": [
     {
       "label": "China",
-      "value": "1,439,323,776"
+      "value": "1439323776"
     },
     {
       "label": "India",
-      "value": "1,380,004,385"
+      "value": "1380004385"
     },
     {
-      "label": "United",
-      "value": "331,002,651"
+      "label": "United States",
+      "value": "331002651"
     },
     {
       "label": "Indonesia",
-      "value": "273,523,615"
+      "value": "273523615"
     },
     {
       "label": "Pakistan",
-      "value": "220,892,340"
+      "value": "220892340"
     },
     {
       "label": "Brazil",
-      "value": "212,559,417"
+      "value": "212559417"
     },
     {
       "label": "Nigeria",
-      "value": "206,139,589"
+      "value": "206139589"
     },
     {
       "label": "Bangladesh",
-      "value": "164,689,383"
+      "value": "164689383"
     },
     {
       "label": "Russia",
-      "value": "145,934,462"
+      "value": "145934462"
     },
     {
       "label": "Mexico",
-      "value": "128,932,753"
-    },
-    {
-      "label": "Japan",
-      "value": "126,476,461"
-    },
-    {
-      "label": "Ethiopia",
-      "value": "114,963,588"
-    },
-    {
-      "label": "Philippines",
-      "value": "109,581,078"
-    },
-    {
-      "label": "Egypt",
-      "value": "102,334,404"
-    },
-    {
-      "label": "Vietnam",
-      "value": "97,338,579"
-    },
-    {
-      "label": "DR",
-      "value": "89,561,403"
-    },
-    {
-      "label": "Turkey",
-      "value": "84,339,067"
-    },
-    {
-      "label": "Iran",
-      "value": "83,992,949"
-    },
-    {
-      "label": "Germany",
-      "value": "83,783,942"
-    },
-    {
-      "label": "Thailand",
-      "value": "69,799,978"
+      "value": "128932753"
     }
   ]
 }

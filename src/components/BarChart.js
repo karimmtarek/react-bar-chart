@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { createUseStyles } from 'react-jss';
 import Bar from './Bar';
 
-function BarChart({title, barHeight, barPadding, barColor, dataSourceUrl}) {
+function BarChart({title, barHeight, barPadding, barColor, dataSourceUrl, valueModifier}) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const useStyles = createUseStyles({
@@ -30,7 +30,7 @@ function BarChart({title, barHeight, barPadding, barColor, dataSourceUrl}) {
   return (
     <div className="BarChart">
       { loading? 'Loading chart...' :
-          <svg width="800" height="300">
+          <svg width="1024" height="400">
             <g className={classes.container}>
               { title &&
                 <text className={classes.title} x="10" y="30">{title}</text>
@@ -44,6 +44,7 @@ function BarChart({title, barHeight, barPadding, barColor, dataSourceUrl}) {
                     barHeight={barHeight}
                     barPadding={barPadding}
                     barColor={barColor}
+                    valueModifier={valueModifier}
                    />
                 ))}
               </g>
